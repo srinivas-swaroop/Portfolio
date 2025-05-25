@@ -61,45 +61,64 @@ header .read-more{
 header .read-more:hover{
   background-color: var(--secondary-color);
 }
-#skill-section{
+#skill-section {
   padding: 80px 20px 150px 20px;
   background-color: var(--secondary-color);
+  font-family: 'Poppins', sans-serif; /* You can change the font as needed */
 }
-#skill-section h2{
+
+#skill-section h2 {
   font-size: 3rem;
   text-align: center;
 }
-#skill-section .wrapper{
+
+#skill-section .wrapper {
   margin-top: 60px;
   display: flex;
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
 }
-.skill-container{
+
+.skill-container {
   width: 400px;
   max-width: 100%;
   border: 10px solid var(--primary-color);
   border-top: none;
 }
-.skill-container h3{
-  background-color: var(--primary-color);
+
+.skill-container h3 {
+  background-color: #d52c3a; /* Red heading */
+  color: white;
   padding: 15px 0;
   text-align: center;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: bold;
 }
-.skill-container ul{
-  margin: 10px 0;
+
+.skill-container ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
-.skill-container ul li{
-  padding: 15px;
+
+.skill-container ul li {
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
-.skill-container ul li progress{
+
+.skill-container ul li:last-child {
+  border-bottom: none; /* remove bottom border for last item */
+}
+
+.skill-container ul li progress {
   accent-color: var(--accent-color);
 }
+
 #projects-section{
   padding: 100px 20px;
 }
